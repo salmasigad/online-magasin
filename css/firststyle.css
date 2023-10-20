@@ -1,0 +1,429 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* Step 3 */
+/* setting font */
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  margin:0;
+  padding:0;
+
+  }
+
+/* Step 4 */
+/* setting font */
+
+nav {
+  background-color: #f8f4eb;
+}
+
+/* Step 5 */
+/* change height and width of the nav container */
+
+nav {
+  background-color: #f8f4eb;
+  height: 80px;
+  width: 100%;
+}
+
+/* Step 6 */
+/* Style the logo */
+
+label.logo {
+  color: black;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+h1.logo {
+  margin-left: 3%;
+}
+
+/* Step 7 */
+/* Style the nav */
+
+nav ul {
+  float: right;
+  margin-right: 180px;
+}
+
+/* Step 8 */
+/* Style the nav */
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+/* Step 9 */
+/* Style the link inside the nav */
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+/* Step 10 */
+/* Remember to add the class active on the index.html site before adding css below */
+/* Style the active link */
+
+a:active,
+a:hover {
+  background-color: #c5bba5;
+  transition: 0.5s;
+}
+
+/* Step 11 */
+/* updating the style inside the nav */
+
+nav ul li a {
+  color: black;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+/* Step 13 */
+/* styling the label checkbtn class */
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+}
+
+/* Step 14 */
+/* styling the input tag  */
+#check {
+  display: none;
+}
+
+/* Step 15 */
+/* styling the label checkbtn class - display none*/
+.checkbtn {
+  font-size: 30px;
+  color: black;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Step 16 */
+/* adding CSS Media Query - break-point 925px max */
+
+@media (max-width: 925px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  h1 {
+    padding-top: 20px;
+  }
+}
+
+/* Step 17 */
+/* adding CSS Media Query - break-point 858px max */
+
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color:white;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+
+  /* Step 18 */
+  /* Continueing Styling break-point 858px max */
+
+  nav ul li {
+    display: block;
+  }
+
+  ul {
+    left: 100%;
+    transition: all 0.5s;
+  }
+
+  /* Step 19 */
+  /* Continueing Styling break-point 858px max */
+  /* adding new selector #check:checked~ */
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* Step 20 */
+  /* updating selector - nav ul li */
+  /*  adding new properties - margin and line-height*/
+
+  nav ul li {
+    margin: 50px 0;
+    line-height: 30px;
+  }
+}
+
+/* Step 21 */
+/* styling section tag - outside teh media query */
+/* adding new properties background - background-size - height */
+
+
+
+/* Step 22 */
+/* making the navbar position fixed */
+
+
+/* styling the top section of the first page */
+
+/*
+.titlename{
+  display:flex;
+ align-items: center;
+ min-height:60vh; 
+  font-size:30px ;
+  font-family:'Times New Roman', Times, serif;
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+*/
+/*.titlename {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+*/
+
+
+.titlename {
+  position: absolute;
+  top: 26%;
+  text-align: center;
+  font-size: 43px;
+}
+
+section {
+  background-color: white; /* Apply styles to the section if needed */
+}
+
+
+
+
+.content-container {
+  display: flex;
+  flex-wrap: column;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: calc(100vh-80px);
+  max-width: 800px;
+  margin: 0 auto;
+  
+  padding: 20px; /* Add padding as needed */
+}
+
+.front-image {
+  width: 80%; /* Adjust the width as needed */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  margin-left:  100px;
+}
+
+
+
+.intro {
+  font-size: 18px;  /* Adjust the font size for readability */
+  text-align: left; /* Align text to the left for easier reading */
+  max-width: 800px; /* Set a maximum width for the content to control line length */
+  margin: 0 auto; /* Center the content horizontally */
+  line-height: 1.6; /* Increase line height for better readability */
+  margin-top: 130px;
+  
+}
+
+
+
+
+
+
+
+
+.content-block {
+  align-items: center;
+  background-color: white;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.image-container {
+  margin: 0 auto;
+}
+
+.image-container img {
+  max-width: 100%; /* Ensure the image doesn't exceed its container width */
+  display: block;
+  margin-bottom:20px;
+  margin-left:500px;
+ 
+}
+
+
+
+.info-container {
+ display: flex;
+ flex-direction: column;
+ align-items: center; /* Center horizontally */
+ justify-content: center; /* Center vertically */
+ text-align: center; /* Optionally center text within the container */
+ line-height: 1.6;
+  }
+  
+
+
+.info-container h4 {
+  font-size: 26px; /* Adjust the font size as needed */
+  color: #797366;
+}
+
+.info-container h6 {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: #797366;
+
+}
+
+.info-container p {
+  font-size: 20px; /* Adjust the font size as needed */
+  text-align: left;
+  text-align: center;
+  line-height: 1.6;
+  margin-bottom: 40px; /* Add spacing between the text and the next content block */
+}
+
+.footer {
+  
+  bottom:0;
+  width:100%;
+  
+  padding: 40px;
+  background-color:#f8f4eb;
+  z-index: 999; /* Add a high z-index value */
+}
+
+
+
+.footer, .social {
+  text-align: center;
+  padding: 25px;
+  color:#4b4c4d;
+
+}
+/* rune's way to style an anchor tag */
+.social a{
+  font-size: 24px;
+  /* the color property here- gets the same colors as its container - in this case. social (color:#4b4c4d */
+  color: inherit;
+  border: 1px solid #ccc;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin:0 8px;
+  opacity: 0.75;
+
+}
+
+
+.social a:hover {
+  opacity: 0.9;
+
+}
+
+.footer ul {
+  margin-top: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+.footer ul li {
+  display: inline-block;
+  padding: 0 15px;
+}
+
+.footer ul li a {
+  color:inherit;
+  text-decoration: none;
+  opacity: 0.8;
+  
+
+}
+ /* when you hold the mouse over it hovers over it */
+.footer ul li a:hover {
+  opacity:1;
+  color: black;
+
+}
+/* when you want to style in the same part, you put it together */
+.footer, .copyright {
+
+margin-top: 15px;
+text-align: center;
+font-size: 13px;
+color: #aaa;
+
+}
+/* there is two ways to make sure your footer is always in the bottom of your page .footer.footer {
+position: fixed;
+width: 100%;
+bottom: 0;
+}
+ */ 
+
+
+
+.footer.footer{
+
+  width:100%;
+  bottom:0;
+}
+  
+  
+
+
+
